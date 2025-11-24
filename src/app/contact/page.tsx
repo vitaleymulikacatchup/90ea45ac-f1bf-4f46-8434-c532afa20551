@@ -2,9 +2,8 @@
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import NavbarLayoutFloatingOverlay from '@/components/navbar/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay';
-import ContactSplit from '@/components/sections/contact/ContactSplit';
 import FooterSocial from '@/components/sections/footer/FooterSocial';
-import { Phone, Facebook, Instagram, Twitter } from 'lucide-react';
+import { Facebook, Instagram, Twitter } from 'lucide-react';
 import Link from 'next/link';
 
 export default function ContactPage() {
@@ -34,21 +33,6 @@ export default function ContactPage() {
             text: "Замовити",
             href: "/contact"
           }}
-        />
-      </div>
-
-      <div id="contact" data-section="contact">
-        <ContactSplit
-          tag="Зв'язок"
-          title="Забронювати столик"
-          description="Залиште свої контакти, і ми зв'яжемося з вами для підтвердження бронювання. Також ви можете підписатися на наші новини та спеціальні пропозиції."
-          tagIcon={Phone}
-          inputPlaceholder="Ваш email"
-          buttonText="Забронювати"
-          termsText="Натискаючи кнопку, ви погоджуєтеся з нашою політикою конфіденційності."
-          imageSrc="https://pixabay.com/get/gc9e62c850de619d2a058944342a4a9881d79c81a46203aefb49a62e9b4b321bcc83ccf9ae07be780d823b11bf6906b4abe2da62f5ffb6501fdeed09b07f0bb71_1280.jpg"
-          imageAlt="Ресторан Пузата Хата зовні"
-          mediaPosition="right"
         />
       </div>
 
